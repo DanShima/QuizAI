@@ -127,7 +127,24 @@ class App extends React.Component {
           </>
         )}
         
-        
+        {predictions && (
+          //present finding to user. the probability is displayed as a bar under each option
+          <div>
+            <h2>We asked the neural network:</h2>
+            <div className="question">
+              <h4>{validationQuestion.question}</h4>
+              <div className="options">
+                {validationQuestion.options.map((o, i) => (
+                  <span className="option-label" key={o.id}>
+                    <span>{`${o.label}: ${Math.round(predictions[0][i] * 100)}%`}</span>
+                    <div className="bar" style={{ width: `${Math.round(predictions[0][i] * 100)}%` }} />
+                  </span>
+                ))}
+              </div>
+            </div>
+            <button type="button" onClick={this.reset}>Back to quiz</button>
+          </div>
+        )} 
       </main>
     );
   }
