@@ -107,7 +107,8 @@ class App extends React.Component {
 
   render() {
     const { training, predictions } = this.state;
-    const validationQuestion = validationQuestions[0];
+    const validationQuestion1 = validationQuestions[0];
+    const validationQuestion2 = validationQuestions[1];
 
     return (
       <main className="App">
@@ -132,9 +133,20 @@ class App extends React.Component {
           <div>
             <h2>We asked the neural network:</h2>
             <div className="question">
-              <h4>{validationQuestion.question}</h4>
+              <h4>{validationQuestion1.question}</h4>
               <div className="options">
-                {validationQuestion.options.map((o, i) => (
+                {validationQuestion1.options.map((o, i) => (
+                  <span className="option-label" key={o.id}>
+                    <span>{`${o.label}: ${Math.round(predictions[0][i] * 100)}%`}</span>
+                    <div className="bar" style={{ width: `${Math.round(predictions[0][i] * 100)}%` }} />
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="question">
+              <h4>{validationQuestion2.question}</h4>
+              <div className="options">
+                {validationQuestion2.options.map((o, i) => (
                   <span className="option-label" key={o.id}>
                     <span>{`${o.label}: ${Math.round(predictions[0][i] * 100)}%`}</span>
                     <div className="bar" style={{ width: `${Math.round(predictions[0][i] * 100)}%` }} />
@@ -148,13 +160,6 @@ class App extends React.Component {
       </main>
     );
   }
-
-
-
-
-
-
  }
-
 
 export default App;
