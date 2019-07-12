@@ -66,6 +66,29 @@ class App extends React.Component {
     </div>
   ));
 
+  buildValidationOptions = (predictions, options) => options.map((o, i) => {
+    // const prediction = `q${predictions[0][i]}`;
+    return (
+        
+            <span className="option-label" key={o.id}>
+            <span>{`${o.label}: ${Math.round([predictions[0][i]] * 100)}%`}</span>
+            <div className="bar" style={{ width: `${Math.round(predictions[0][i] * 100)}%` }} />
+          </span>      
+        
+    );
+  });
+
+  buildValidationQuestions = (predictions, questions) => questions.map((q, i) => (
+    <div className="question" key={q.id}>
+      <h4>
+        {`${i + 1}. ${q.question}`}
+      </h4>
+      <div className="options">
+        {this.buildValidationOptions(predictions, q.options)}
+      </div>
+    </div>
+  ));
+
   getPredictions = () => {
     const predictions = validationQuestions.map(q => (
       //give predictions for each of the validation questions defined earlier
@@ -107,8 +130,6 @@ class App extends React.Component {
 
   render() {
     const { training, predictions } = this.state;
-    const validationQuestion1 = validationQuestions[0];
-    const validationQuestion2 = validationQuestions[1];
 
     return (
       <main className="App">
@@ -132,28 +153,7 @@ class App extends React.Component {
           //present finding to user. the probability is displayed as a bar under each option
           <div>
             <h2>We asked the neural network:</h2>
-            <div className="question">
-              <h4>{validationQuestion1.question}</h4>
-              <div className="options">
-                {validationQuestion1.options.map((o, i) => (
-                  <span className="option-label" key={o.id}>
-                    <span>{`${o.label}: ${Math.round(predictions[0][i] * 100)}%`}</span>
-                    <div className="bar" style={{ width: `${Math.round(predictions[0][i] * 100)}%` }} />
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="question">
-              <h4>{validationQuestion2.question}</h4>
-              <div className="options">
-                {validationQuestion2.options.map((o, i) => (
-                  <span className="option-label" key={o.id}>
-                    <span>{`${o.label}: ${Math.round(predictions[0][i] * 100)}%`}</span>
-                    <div className="bar" style={{ width: `${Math.round(predictions[0][i] * 100)}%` }} />
-                  </span>
-                ))}
-              </div>
-            </div>
+            {this.buildValidationQuestions(predictions, validationQuestions)}
             <button type="button" onClick={this.reset}>Back to quiz</button>
           </div>
         )} 
