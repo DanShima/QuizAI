@@ -152,7 +152,7 @@ class App extends React.Component {
         {predictions && (
           //present finding to user. the probability is displayed as a bar under each option
           <div>
-            <h2>We asked the neural network:</h2>
+            <h2>The neural network predicts:</h2>
             {this.buildValidationQuestions(predictions, validationQuestions)}
             <button type="button" onClick={this.reset}>Back to quiz</button>
           </div>
