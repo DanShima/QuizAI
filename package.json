@@ -2,7 +2,7 @@
   "name": "quizai",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://danshima.github.io/quizai",
+  "homepage": "https://danshima.github.io/quizai/",
   "dependencies": {
     "brain.js": "^1.6.1",
     "gh-pages": "^2.0.1",
