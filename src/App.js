@@ -137,7 +137,7 @@ class App extends React.Component {
           <>
             {!training && (
               <form onSubmit={this.onSubmit}>
-                <h2>How optimistic are you?</h2>
+                <h2>How open-minded are you?</h2>
                 {this.buildQuestions(trainingQuestions)}
                 <button type="submit">Submit</button>
               </form>
