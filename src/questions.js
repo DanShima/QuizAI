@@ -54,10 +54,10 @@ export const trainingQuestions = [
       id: 'q6',
       question: 'Finish this sentence: "It has been done this way for 500 years, and..."',
       options: [
-        { id: 'q6a', label: 'it will always be done this way', value: 0.0 },
-        { id: 'q6b', label: 'I am sure we could come up with a better way to do it', value: 1.0 },
-        { id: 'q6c', label: 'it is probably about time for a change', value: 0.7 },
         { id: 'q6d', label: 'probably for a good reason', value: 0.3 },
+        { id: 'q6a', label: 'it will always be done this way', value: 0.0 },
+        { id: 'q6c', label: 'it is probably about time for a change', value: 0.7 },
+        { id: 'q6b', label: 'I am sure we could come up with a better way to do it', value: 1.0 },
       ],
     },
     {
@@ -68,6 +68,16 @@ export const trainingQuestions = [
         { id: 'q7b', label: 'Sure', value: 1.0 },
         { id: 'q7c', label: 'Depends, I can form a better understanding as I know more about a certain issue', value: 0.7 },
         { id: 'q7d', label: 'Sometimes', value: 0.5 },
+      ],
+    },
+    {
+      id: 'q8',
+      question: 'I prefer to follow most rules and instructions.',
+      options: [
+        { id: 'q8a', label: 'Never', value: 1.0 },
+        { id: 'q8b', label: 'Absolutely', value: 0.0 },
+        { id: 'q8c', label: 'I do not like to, but mostly have to', value: 0.7 },
+        { id: 'q8d', label: 'Sometimes', value: 0.5 },
       ],
     },
   ];
@@ -85,12 +95,12 @@ export const trainingQuestions = [
     },
     {
         id: 'vq2',
-        question: 'Do you ever see yourself having a real conversation with a homeless person?',
+        question: 'Comfort is often more important to me than trying something new.',
         options: [
-          { id: 'vq2a', label: 'I would never!', value: 0.0 },
-          { id: 'vq2b', label: 'It can happen', value: 0.8 },
-          { id: 'vq2c', label: 'Hard to imagine', value: 0.2 },
-          { id: 'vq2d', label: 'Yes, why not', value: 1.0 },
+          { id: 'vq2a', label: 'Strongly agree', value: 0.0 },
+          { id: 'vq2b', label: 'Agree', value: 0.8 },
+          { id: 'vq2c', label: 'Neutral', value: 0.5 },
+          { id: 'vq2d', label: 'Disagree', value: 1.0 },
         ],
     },
   ];
