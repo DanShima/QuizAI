@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/quizai/static/css/main.5d60cfc2.chunk.css",
+    "main.js": "/quizai/static/js/main.900e882d.chunk.js",
+    "main.js.map": "/quizai/static/js/main.900e882d.chunk.js.map",
+    "runtime~main.js": "/quizai/static/js/runtime~main.b6b65582.js",
+    "runtime~main.js.map": "/quizai/static/js/runtime~main.b6b65582.js.map",
+    "static/js/2.5ae6aabf.chunk.js": "/quizai/static/js/2.5ae6aabf.chunk.js",
+    "static/js/2.5ae6aabf.chunk.js.map": "/quizai/static/js/2.5ae6aabf.chunk.js.map",
+    "index.html": "/quizai/index.html",
+    "precache-manifest.dd58083b354b4e219f94a41df93bee40.js": "/quizai/precache-manifest.dd58083b354b4e219f94a41df93bee40.js",
+    "service-worker.js": "/quizai/service-worker.js",
+    "static/css/main.5d60cfc2.chunk.css.map": "/quizai/static/css/main.5d60cfc2.chunk.css.map"
+  }
+}
