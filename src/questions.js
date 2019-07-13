@@ -16,7 +16,7 @@ export const trainingQuestions = [
       options: [
         { id: 'q2a', label: 'Never read his books again', value: 0.0 },
         { id: 'q2b', label: 'Read his books one last time but will not look for new books', value: 0.2 },
-        { id: 'q2d', label: 'Like him more because you are a misogynist too', value: 0.8 },
+        { id: 'q2d', label: 'do not mind and feel curious why he is like that', value: 0.8 },
         { id: 'q2c', label: 'feel upset but continue to read his books', value: 0.6 },
       ],
     },
@@ -32,7 +32,7 @@ export const trainingQuestions = [
     },
     {
       id: 'q4',
-      question: 'How do you feel about fiction with an uncertain ending, where you are left to imagine what happens next?',
+      question: 'How do you feel about fiction(books/movie/series) with an uncertain ending, where you are left to imagine what happens next?',
       options: [
         { id: 'q4a', label: 'Meh', value: 0.3 },
         { id: 'q4b', label: 'That is great sometimes', value: 0.6 },
@@ -74,7 +74,7 @@ export const trainingQuestions = [
       id: 'q8',
       question: 'I prefer to follow most rules and instructions.',
       options: [
-        { id: 'q8a', label: 'Never', value: 1.0 },
+        { id: 'q8a', label: 'Rules are made to be broken and instructions are just restrictions', value: 1.0 },
         { id: 'q8b', label: 'Absolutely', value: 0.0 },
         { id: 'q8c', label: 'I do not like to, but mostly have to', value: 0.7 },
         { id: 'q8d', label: 'Sometimes', value: 0.5 },
@@ -98,7 +98,7 @@ export const trainingQuestions = [
         question: 'Comfort is often more important to me than trying something new.',
         options: [
           { id: 'vq2a', label: 'Strongly agree', value: 0.0 },
-          { id: 'vq2b', label: 'Agree', value: 0.8 },
+          { id: 'vq2b', label: 'Agree', value: 0.7 },
           { id: 'vq2c', label: 'Neutral', value: 0.5 },
           { id: 'vq2d', label: 'Disagree', value: 1.0 },
         ],
