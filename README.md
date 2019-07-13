@@ -8,6 +8,10 @@ This project is about training a neural network with answers obtained from a qui
 - The neural network has three layers: input, hidden and output, with each containing a number of neurons/nodes. The number of neurons in each layer must match the number of input and output values wanted.
 The hidden layer aims to transform the inputs into something the output layer can use. It manipulates the input values to give the outputs that are likely being selected.
 
+## TODO's 
+- improve accuracy and determin error rate by letting users answer the validation answers as well.
+- move the neural network calculations over to a Node server (brain.js `toFunction()` and `toJSON()`)
+
 
 ## Available Scripts
 ### `npm start`
@@ -20,6 +24,8 @@ Builds the app for production to the `build` folder.<br>
 ### `npm run eject`
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `npm run deploy` 
+The project is deployed to Github Pages using `gh-pages`. 
 
 
 
