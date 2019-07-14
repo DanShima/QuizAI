@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import brain from 'brain.js';
-import { trainingQuestions, validationQuestions } from './questions';
+import { trainingQuestions, validationQuestions } from './questions2';
 
 class App extends React.Component {
   constructor() {
@@ -137,7 +137,7 @@ class App extends React.Component {
           <>
             {!training && (
               <form onSubmit={this.onSubmit}>
-                <h2>How open-minded are you?</h2>
+                <h2>Quiz</h2>
                 {this.buildQuestions(trainingQuestions)}
                 <button type="submit">Submit</button>
               </form>
