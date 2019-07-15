@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/quizai/static/css/main.5d60cfc2.chunk.css",
-    "main.js": "/quizai/static/js/main.8c201bd9.chunk.js",
-    "main.js.map": "/quizai/static/js/main.8c201bd9.chunk.js.map",
+    "main.js": "/quizai/static/js/main.9f854de4.chunk.js",
+    "main.js.map": "/quizai/static/js/main.9f854de4.chunk.js.map",
     "runtime~main.js": "/quizai/static/js/runtime~main.b6b65582.js",
     "runtime~main.js.map": "/quizai/static/js/runtime~main.b6b65582.js.map",
     "static/js/2.5ae6aabf.chunk.js": "/quizai/static/js/2.5ae6aabf.chunk.js",
     "static/js/2.5ae6aabf.chunk.js.map": "/quizai/static/js/2.5ae6aabf.chunk.js.map",
     "index.html": "/quizai/index.html",
-    "precache-manifest.2b93b901dcbe8c058c20a70c9738bb81.js": "/quizai/precache-manifest.2b93b901dcbe8c058c20a70c9738bb81.js",
+    "precache-manifest.21cd099b96ecabad3365a2eb25529e4c.js": "/quizai/precache-manifest.21cd099b96ecabad3365a2eb25529e4c.js",
     "service-worker.js": "/quizai/service-worker.js",
     "static/css/main.5d60cfc2.chunk.css.map": "/quizai/static/css/main.5d60cfc2.chunk.css.map"
   }
