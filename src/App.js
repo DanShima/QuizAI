@@ -7,8 +7,8 @@ class App extends React.Component {
   constructor() {
     super();
     this.initialState = {
-     trainingAnswers: trainingQuestions.map(()=> Array(4).fill(0)),
-     validationAnswers: validationQuestions.map(()=> Array(4).fill(0)),
+     trainingAnswers: trainingQuestions.map(()=> Array(5).fill(0)),
+     validationAnswers: validationQuestions.map(()=> Array(5).fill(0)),
      training: false,
      predictions: undefined,
     };
@@ -16,7 +16,7 @@ class App extends React.Component {
     this.state = this.initialState;
 
     //initialize the neural network
-    this.net = new brain.NeuralNetwork({ hiddenLayers: [4] });
+    this.net = new brain.NeuralNetwork({ hiddenLayers: [5] });
   }
   // update the array with 1 in the selected index
   isOptionChecked = (questionIndex, optionIndex) => {
@@ -28,7 +28,7 @@ class App extends React.Component {
     this.setState((prevState) => {
       const { trainingAnswers } = Object.assign(prevState, {});
 
-    trainingAnswers[questionIndex] = Array(4).fill(0);
+    trainingAnswers[questionIndex] = Array(5).fill(0);
     trainingAnswers[questionIndex][optionIndex] = 1;
 
     return { trainingAnswers };

@@ -1,4 +1,4 @@
-This project is about training a neural network with answers obtained from a quiz on open-mindedness. The neural network is trained to predict the likelihood of the user selecting each option for a brand new question. 
+This project is about training a neural network with answers obtained from a quiz. The neural network is trained to predict the likelihood of the user selecting each option for a brand new question. 
 (bootstrapped with [Create React App](https://github.com/facebook/create-react-app).)
 See the quiz on https://danshima.github.io/quizai/
 
